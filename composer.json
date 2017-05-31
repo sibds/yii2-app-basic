@@ -1,8 +1,8 @@
 {
-    "name": "yiisoft/yii2-app-basic",
-    "description": "Yii 2 Basic Project Template",
-    "keywords": ["yii2", "framework", "basic", "project template"],
-    "homepage": "http://www.yiiframework.com/",
+    "name": "sibds/yii2-basic",
+    "description": "Yii 2 Basic Project",
+    "keywords": ["yii2", "framework", "basic", "project"],
+    "homepage": "http://www.sibds.com/",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
