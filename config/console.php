@@ -2,12 +2,21 @@
 
 $params = require(__DIR__ . '/params.php');
 $db = require(__DIR__ . '/db.php');
+$modules = array_merge(require(__DIR__ . '/modules.php'), [
+    'rbac' => 'dektrium\rbac\RbacConsoleModule',
+]);
 
 $config = [
     'id' => 'basic-console',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'app\commands',
+    'controllerMap'       => [
+        'migrate' => [
+            'class' => 'dmstr\console\controllers\MigrateController'
+        ],
+    ],
+    'modules' => $modules,
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',

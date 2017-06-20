@@ -17,23 +17,31 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.5",
         "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0"
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
+        "sibds/yii2-sibds-gii": "dev-master",
+        "sibds/yii2-formfooter": "dev-master",
+        "dmstr/yii2-migrate-command": "dev-master",
+        "dmstr/yii2-adminlte-asset": "2.*",
+        "dektrium/yii2-user": "^0.9.0@dev",
+        "dektrium/yii2-rbac": "1.0.0-alpha@dev",
+        "mazurva/yii2-menumodules": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
         "yiisoft/yii2-gii": "~2.0.0",
         "yiisoft/yii2-faker": "~2.0.0",
 
-        "codeception/base": "^2.2.3",
+        "codeception/codeception": "^2.2.3",
         "codeception/verify": "~0.3.1",
-        "codeception/specify": "~0.4.3"
+        "codeception/specify": "~0.4.3",
+        "c006/yii2-migration-utility": "dev-master"
     },
     "config": {
         "process-timeout": 1800,
         "fxp-asset":{
             "installer-paths": {
                 "npm-asset-library": "vendor/npm",
-                "bower-asset-library": "vendor/bower"
+                "bower-asset-library": "vendor/bowercm"
             }
         }
     },
