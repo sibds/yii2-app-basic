@@ -11,7 +11,10 @@ $config = [
     'name' => 'Yii2 basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'language' => 'en',
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+    ],
     'modules' => $modules,
     'components' => [
         'request' => [
