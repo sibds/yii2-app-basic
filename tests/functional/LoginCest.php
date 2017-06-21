@@ -1,11 +1,13 @@
 <?php
 
+use yii\helpers\Url;
+
 class LoginCest
 {
 
     public function _before(\FunctionalTester $I)
     {
-        $I->amOnRoute('user/security/login');
+        $I->amOnRoute(Url::toRoute(['user/security/login']));
     }
 
     public function openAuthPage(\FunctionalTester $I)
