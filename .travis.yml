@@ -23,6 +23,10 @@ install:
   - |
     sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'testkey'/" config/web.php
 
+before_script:
+  - mysql -e 'create database dyii2_basic_tests;'
+  - mysql dyii2_basic_tests < tests/_data/yii2_basic_tests.sql
+
 script:
   - |
     php -S localhost:8080 -t web > /dev/null 2>&1 &
