@@ -5,7 +5,7 @@ class LoginCest
 
     public function _before(\FunctionalTester $I)
     {
-        $I->amOnRoute(['user/security/login']);
+        $I->amOnRoute('index-test.php?r=user/security/login');
     }
 
     public function openAuthPage(\FunctionalTester $I)
