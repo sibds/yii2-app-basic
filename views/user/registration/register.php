@@ -17,6 +17,7 @@ use yii\widgets\ActiveForm;
  * @var dektrium\user\models\User $model
  * @var dektrium\user\Module $module
  */
+\app\assets\LoginAsset::register($this);
 
 $this->title = Yii::t('user', 'Sign up');
 $this->params['breadcrumbs'][] = $this->title;

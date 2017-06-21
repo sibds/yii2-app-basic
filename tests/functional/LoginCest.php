@@ -29,12 +29,12 @@ class LoginCest
         $I->see('Invalid login or password');
     }
 
-    /*public function loginWithCorrectPassword(\FunctionalTester $I){
+    public function loginWithCorrectPassword(\FunctionalTester $I){
         $I->submitForm('#login-form', [
-            'login-form[login]' => 'webmaster',
-            'login-form[password]' => 'webmaster',
+            'login-form[login]' => 'admin',
+            'login-form[password]' => 'admin',
         ]);
         $I->see('Hello');
-    }*/
+    }
 
 }
