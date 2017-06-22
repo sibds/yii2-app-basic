@@ -128,7 +128,7 @@ CREATE TABLE `profile` (
 --
 
 INSERT INTO `profile` (`user_id`, `name`, `public_email`, `gravatar_email`, `gravatar_id`, `location`, `website`, `bio`, `timezone`) VALUES
-(1, '', '', 'mazurva@gmail.com', '82c6da7d17dd6f0853031eb75ab57693', '', '', '', 'Asia/Omsk');
+(1, '', '', '', '82c6da7d17dd6f0853031eb75ab57693', '', '', '', 'Asia/Omsk');
 
 -- --------------------------------------------------------
 
