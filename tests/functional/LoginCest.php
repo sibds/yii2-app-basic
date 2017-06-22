@@ -37,4 +37,9 @@ class LoginCest
         $I->see('Hello');
     }
 
+    public function logout(\FunctionalTester $I){
+        $I->click('.user-menu');
+        $I->see('Member since');
+    }
+
 }
