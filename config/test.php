@@ -29,7 +29,8 @@ return [
             'showScriptName' => true,
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'dektrium\user\models\User',
+            'enableAutoLogin' => true,
         ],        
         'request' => [
             'cookieValidationKey' => 'test',
