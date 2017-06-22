@@ -99,31 +99,29 @@ $(\'input\').iCheck({
     <?php ActiveForm::end(); ?>
 
     <?php if(\Yii::$app->hasProperty('authClientCollection')):?>
-        <div class="social-auth-links text-center">
-            <p>- OR -</p>
-            <?= Connect::widget([
-                'baseAuthUrl' => ['/user/security/auth'],
-            ]) ?>
-        </div>
-        <?php endif ?>
-        <!-- /.social-auth-links -->
-        <?php if ($module->enablePasswordRecovery): ?>
-            <?=Html::a(
-                Yii::t('user', 'Forgot password?'),
-                ['/user/recovery/request'],
-                ['tabindex' => '5']
-            )?>
-        <?php endif ?>
-        <?php if ($module->enableConfirmation): ?>
-            <?= Html::a(Yii::t('user', 'Didn\'t receive confirmation message?'), ['/user/registration/resend']) ?>
-        <?php endif ?>
-        <?php if ($module->enableRegistration): ?>
-            <?= Html::a(Yii::t('user', 'Don\'t have an account? Sign up!'),
-                    ['/user/registration/register'],
-                    ['class'=>'text-center']) ?>
-        <?php endif ?>
-     <?= Html::a(Yii::t('user', 'I already have a membership'), ['/user/security/login'], ['class'=>'text-center']) ?>    
-  </div>
+      <div class="social-auth-links text-center">
+          <p>- OR -</p>
+          <?= Connect::widget([
+              'baseAuthUrl' => ['/user/security/auth'],
+          ]) ?>
+      </div>
+    <?php endif ?>
+    <!-- /.social-auth-links -->
+    <?php if ($module->enablePasswordRecovery): ?>
+        <?=Html::a(
+            Yii::t('user', 'Forgot password?'),
+            ['/user/recovery/request'],
+            ['tabindex' => '5']
+        )?>
+    <?php endif ?>
+    <?php if ($module->enableConfirmation): ?>
+        <?= Html::a(Yii::t('user', 'Didn\'t receive confirmation message?'), ['/user/registration/resend']) ?>
+    <?php endif ?>
+    <?php if ($module->enableRegistration): ?>
+        <?= Html::a(Yii::t('user', 'Don\'t have an account? Sign up!'),
+                ['/user/registration/register'],
+                ['class'=>'text-center']) ?>
+    <?php endif ?>
   <!-- /.form-box -->
 </div>
 <!-- /.register-box -->
