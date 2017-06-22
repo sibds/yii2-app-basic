@@ -33,13 +33,12 @@ return [
         ],        
         'request' => [
             'cookieValidationKey' => 'test',
-            'enableCsrfValidation' => true,
+            'enableCsrfValidation' => false,
             // but if you absolutely need it set cookie domain to localhost
-            /*
+            
             'csrfCookie' => [
                 'domain' => 'localhost',
             ],
-            */
         ],    
         'view' => $view,    
     ],
