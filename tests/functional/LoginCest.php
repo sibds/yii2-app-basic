@@ -31,8 +31,8 @@ class LoginCest
 
     public function loginWithCorrectPassword(\FunctionalTester $I){
         $I->submitForm('#login-form', [
-            'login-form[login]' => 'admin',
-            'login-form[password]' => 'admin',
+            'login-form[login]' => 'webmaster',
+            'login-form[password]' => 'webmaster',
         ]);
         $I->see('Hello');
     }
