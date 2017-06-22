@@ -26,7 +26,6 @@ install:
 before_script:
   - mysql -e 'create database yii2_basic_tests;'
   - mysql yii2_basic_tests < tests/_data/yii2_basic_tests.sql
-  - php tests/bin/yii user/create webmaster@webmaster.com admin admin
 
 script:
   - |
