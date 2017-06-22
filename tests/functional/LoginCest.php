@@ -38,8 +38,8 @@ class LoginCest
     }
 
     public function logout(\FunctionalTester $I){
-        $I->click('.user-menu');
-        $I->see('Member since');
+        $I->click('Sign out',['css' => 'div.pull-right a']);
+        $I->see('Sign in to start your session');
     }
 
 }
