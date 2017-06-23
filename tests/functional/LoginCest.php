@@ -37,9 +37,14 @@ class LoginCest
         $I->see('Hello');
     }
 
-    public function logout(\FunctionalTester $I){
-        $I->click('Sign out',['css' => 'div.pull-right a']);
+    /*public function logout(\FunctionalTester $I){
+        $I->submitForm('#login-form', [
+            'login-form[login]' => 'webmaster',
+            'login-form[password]' => 'webmaster',
+        ]);
+
+        $I->click('Sign out');
         $I->see('Sign in to start your session');
-    }
+    }*/
 
 }

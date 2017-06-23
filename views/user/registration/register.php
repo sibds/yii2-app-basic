@@ -34,7 +34,7 @@ $(\'input\').iCheck({
 
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="../../index2.html">>Yii2 <b>Basic</b></a>
   </div>
 
   <div class="register-box-body">

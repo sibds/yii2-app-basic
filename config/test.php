@@ -4,6 +4,7 @@ $db = require(__DIR__ . '/test_db.php');
 $view = require(__DIR__ . '/view.php');
 
 $modules = array_merge([], require(__DIR__ . '/modules.php'));
+$modules['user']['enableConfirmation'] = false;
 
 /**
  * Application configuration shared by all test types
@@ -31,6 +32,7 @@ return [
         'user' => [
             'identityClass' => 'dektrium\user\models\User',
             'enableAutoLogin' => true,
+            'enableConfirmation' => false,
         ],        
         'request' => [
             'cookieValidationKey' => 'test',
