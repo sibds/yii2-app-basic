@@ -13,6 +13,7 @@ return [
             '@app/modules' => '@app/views',
             '@dektrium/user/views/security' => '@app/views/user/security',
             '@dektrium/user/views/registration' => '@app/views/user/registration',
+            '@dektrium/user/views/recovery' => '@app/views/user/recovery',
         ],
     ],
 ];
