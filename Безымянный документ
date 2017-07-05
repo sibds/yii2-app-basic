@@ -1,7 +1,0 @@
-'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=mysql_yii2;dbname=yii2-enterprise',
-            'username' => 'appuser',
-            'password' => '3210',
-            'charset' => 'utf8',
-        ],
