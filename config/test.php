@@ -10,7 +10,11 @@ $modules['user']['enableConfirmation'] = false;
  */
 return [
     'id' => 'basic-tests',
-    'basePath' => dirname(__DIR__),    
+    'basePath' => dirname(__DIR__),  
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+    ],  
     'language' => 'en-US',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
