@@ -1,8 +1,9 @@
 <?php
-use yii\helpers\Html;
-
 /* @var $this \yii\web\View */
 /* @var $content string */
+
+use app\widgets\Alert;
+use yii\helpers\Html;
 
 
 $controllers = ['security', 'registration', 'recovery'];

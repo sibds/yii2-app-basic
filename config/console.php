@@ -1,7 +1,7 @@
 <?php
 
-$params = require(__DIR__ . '/params.php');
-$db = require(__DIR__ . '/db.php');
+$params = require __DIR__ . '/params.php';
+$db = require __DIR__ . '/db.php';
 $modules = array_merge(require(__DIR__ . '/modules.php'), [
     'rbac' => 'dektrium\rbac\RbacConsoleModule',
 ]);

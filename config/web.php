@@ -1,8 +1,8 @@
 <?php
 
-$params = require(__DIR__ . '/params.php');
-$db = require(__DIR__ . '/db.php');
-$view = require(__DIR__ . '/view.php');
+$params = require __DIR__ . '/params.php';
+$db = require __DIR__ . '/db.php';
+$view = require __DIR__ . '/view.php';
 
 $modules = array_merge([], require(__DIR__ . '/modules.php'));
 
@@ -67,7 +67,6 @@ $config = [
     ],
     'params' => $params,
 ];
-
 
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
