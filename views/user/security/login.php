@@ -107,6 +107,9 @@ $(\'input\').iCheck({
         <div class="row">
             <div class="col-xs-6">
                 <div class="checkbox icheck">
+                    <?php 
+                    $this->registerCss('.checkbox label {padding-left: 0px;}');
+                    ?>
                     <?= $form->field($model, 'rememberMe')->checkbox(['style'=>'padding-left: 0']) ?>
                 </div>
             </div>
