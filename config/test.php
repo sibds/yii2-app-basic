@@ -16,6 +16,7 @@ return [
         '@npm'   => '@vendor/npm-asset',
     ],  
     'language' => 'en-US',
+    'modules' => $modules,
     'components' => [
         'db' => $db,
         'mailer' => [
