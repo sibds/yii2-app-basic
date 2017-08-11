@@ -105,7 +105,7 @@ $(\'input\').iCheck({
 
 
         <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-8">
                 <div class="checkbox icheck">
                     <?php 
                     $this->registerCss('.checkbox label {padding-left: 0px;}');
@@ -114,7 +114,7 @@ $(\'input\').iCheck({
                 </div>
             </div>
             <!-- /.col -->
-            <div class="col-xs-6">
+            <div class="col-xs-4">
                 <?= Html::submitButton(
                     Yii::t('user', 'Sign in'),
                     ['class' => 'btn btn-primary btn-block btn-flat', 'tabindex' => '4']
