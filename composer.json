@@ -20,6 +20,7 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "sibds/yii2-sibds-gii": "dev-master",
         "sibds/yii2-formfooter": "dev-master",
+        "sibds/yii2-activerecord": "dev-master",
         "dmstr/yii2-migrate-command": "dev-master",
         "dmstr/yii2-adminlte-asset": "2.*",
         "dektrium/yii2-user": "^0.9.0@dev",
