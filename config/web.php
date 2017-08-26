@@ -82,6 +82,17 @@ if (YII_ENV_DEV) {
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
+        'generators' => [
+            'SModel' => [
+                'class' => 'sibds\gii\model\Generator',
+            ],
+            'SModule' => [
+                'class' => 'sibds\gii\module\Generator',
+            ],
+            'SCrud' => [
+                'class' => 'sibds\gii\crud\Generator',
+            ],
+        ],
     ];
 }
 
