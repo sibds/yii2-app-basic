@@ -13,6 +13,7 @@ use dektrium\user\widgets\Connect;
 use dektrium\user\models\LoginForm;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\Url;
 
 /**
  * @var yii\web\View $this
@@ -36,7 +37,7 @@ $(\'input\').iCheck({
 
 <div class="login-box">
     <div class="login-logo">
-        <a href="../../index2.html">Yii2 <b>Basic</b></a>
+        <a href="<?=Url::home(true)?>">Yii2 <b>Basic</b></a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">

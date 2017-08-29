@@ -11,6 +11,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\Url;
 
 /**
  * @var yii\web\View $this
@@ -23,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="register-box">
     <div class="register-logo">
-        <a href="../../index2.html">Yii2 <b>Basic</b></a>
+        <a href="<?=Url::home(true)?>">Yii2 <b>Basic</b></a>
     </div>
 
     <p class="login-box-msg">Reset password</p>
