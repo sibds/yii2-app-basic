@@ -26,7 +26,8 @@
         "dmstr/yii2-adminlte-asset": "2.*",
         "dektrium/yii2-user": "^0.9.0@dev",
         "dektrium/yii2-rbac": "1.0.0-alpha@dev",
-        "mazurva/yii2-menumodules": "dev-master"
+        "mazurva/yii2-menumodules": "dev-master",
+        "kartik-v/yii2-tabs-x": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
