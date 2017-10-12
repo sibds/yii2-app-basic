@@ -84,7 +84,7 @@ use yii\helpers\ArrayHelper;
         <?=\dmstr\widgets\Menu::widget(
             [
                 'encodeLabels' => false,
-                'options' => ['class' => 'sidebar-menu'],
+                'options' => ['class' => 'sidebar-menu tree', 'data-widget'=>'tree'],
                 'items' => \yii\helpers\ArrayHelper::merge($basicMenu,$adminMenu),
             ]
         );
